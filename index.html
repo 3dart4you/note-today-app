@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Note Today</title>
+<meta name="description" content="Note Today — нотатки й календар для Windows із синхронізацією через Google Drive.">
+<style>
+  :root { --bg:#111722; --panel:#161d2a; --card:#1b2331; --border:#2b3546;
+          --text:#e7ecf3; --muted:#8c97a8; --glow:#3fd0e0; --accent:#4c7dff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:"Segoe UI",system-ui,-apple-system,sans-serif; line-height:1.55; }
+  main { max-width:760px; margin:0 auto; padding:56px 16px 40px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:22px;
+          padding:36px 32px; box-shadow:0 0 48px rgba(63,208,224,.08); }
+  h1 { margin:0 0 6px; font-size:34px; }
+  .lead { margin:0 0 28px; color:var(--muted); font-size:18px; }
+  .download { display:inline-flex; align-items:center; gap:10px; background:var(--accent);
+              color:#fff; text-decoration:none; font-weight:600; padding:14px 26px;
+              border-radius:14px; box-shadow:0 0 22px rgba(76,125,255,.45); }
+  .download:hover { filter:brightness(1.1); }
+  .meta { margin:12px 0 0; color:var(--muted); font-size:14px; }
+  ul { padding-left:20px; margin:28px 0 0; }
+  li { margin:6px 0; }
+  li::marker { color:var(--glow); }
+  footer { margin-top:28px; color:var(--muted); font-size:14px; text-align:center; }
+  a { color:var(--glow); }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>Note Today</h1>
+    <p class="lead">Нотатки й календар для Windows. Працює без інтернету, а з Google-акаунтом — синхронізує нотатки через Google Drive і показує події Google Calendar.</p>
+    <a class="download" id="download" href="update.json">⬇ Завантажити для Windows</a>
+    <p class="meta" id="version">Windows 10 і 11, 64-біт</p>
+    <ul>
+      <li>Нотатки з групами, пошуком, закріпленням і кошиком.</li>
+      <li>Швидка нотатка одним кліком по іконці в треї.</li>
+      <li>Перевірка правопису й граматики українською та англійською.</li>
+      <li>Синхронізація через ваш Google Drive (папка «Note Today»).</li>
+      <li>Календар із подіями Google Calendar: перегляд, створення, зміна, видалення.</li>
+      <li>Оновлення приходять самі — програма повідомить про нову версію.</li>
+    </ul>
+  </div>
+  <footer><a href="privacy.html">Політика конфіденційності</a></footer>
+</main>
+<script>
+  fetch('update.json', { cache: 'no-cache' })
+    .then(r => r.json())
+    .then(u => {
+      document.getElementById('download').href = u.url;
+      document.getElementById('version').textContent =
+        'Версія ' + u.version + ' · Windows 10 і 11, 64-біт';
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>
