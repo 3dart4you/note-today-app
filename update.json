@@ -2,5 +2,5 @@
   "version": "1.0.0",
   "url": "https://3dart4you.github.io/note-today-app/NoteToday-Setup-1.0.0.exe",
   "sha256": "b6e363774211bfd0e49abdfa1a7a0425939942230c75e07fdeb3817ac36ef61a",
-  "notes": "First release"
+  "notes": "Перша версія: нотатки, синхронізація з Google Drive, календар, автоматичні оновлення."
 }
