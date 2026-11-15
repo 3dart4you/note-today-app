@@ -1,6 +1,6 @@
 {
-  "version": "1.1.2",
-  "url": "https://3dart4you.github.io/note-today-app/NoteToday-Setup-1.1.2.exe",
-  "sha256": "1d36d8633690ae46044d13c5dbe945426f52a43468341b0a9be82b430c74c01d",
-  "notes": "Виправлено біле вікно після оновлення та встановлення оновлень: програма сама встановлює нову версію й запускається знову."
+  "version": "1.1.3",
+  "url": "https://3dart4you.github.io/note-today-app/NoteToday-Setup-1.1.3.exe",
+  "sha256": "046942b19a1bbbfb0bf95d3a81431b5a3f811403a414946b0e7b965ee2ffe8d4",
+  "notes": "Нова іконка програми одразу з’являється на ярликах і панелі задач."
 }
