@@ -1,6 +1,6 @@
 {
-  "version": "1.1.3",
-  "url": "https://3dart4you.github.io/note-today-app/NoteToday-Setup-1.1.3.exe",
-  "sha256": "046942b19a1bbbfb0bf95d3a81431b5a3f811403a414946b0e7b965ee2ffe8d4",
-  "notes": "Нова іконка програми одразу з’являється на ярликах і панелі задач."
+  "version": "1.1.31",
+  "url": "https://3dart4you.github.io/note-today-app/NoteToday-Setup-1.1.31.exe",
+  "sha256": "39bb5541781cc00f95f59401d7e6a48167c9242e40525f6c3417dccfbbb8cc97",
+  "notes": "Погода у календарі за вашим місцезнаходженням, менше зайвих файлів на Google Drive, меню трею більше не відкриває головне вікно."
 }
