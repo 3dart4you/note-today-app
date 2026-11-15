@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "url": "https://3dart4you.github.io/note-today-app/NoteToday-Setup-1.0.0.exe",
-  "sha256": "b6e363774211bfd0e49abdfa1a7a0425939942230c75e07fdeb3817ac36ef61a",
-  "notes": "Перша версія: нотатки, синхронізація з Google Drive, календар, автоматичні оновлення."
+  "version": "1.1.0",
+  "url": "https://3dart4you.github.io/note-today-app/NoteToday-Setup-1.1.0.exe",
+  "sha256": "c215d10572116f4bb156c3118d8c69cdea40ea5798f4fd56b1d294dc2ab7ec2e",
+  "notes": "Дедлайни з сигналом і повідомленням біля трею, кольори подій у календарі, нова іконка програми."
 }
