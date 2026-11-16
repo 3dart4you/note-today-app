@@ -20,6 +20,10 @@
               color:#fff; text-decoration:none; font-weight:600; padding:14px 26px;
               border-radius:14px; box-shadow:0 0 22px rgba(76,125,255,.45); }
   .download:hover { filter:brightness(1.1); }
+  .actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px; }
+  .soon { display:inline-flex; align-items:center; gap:10px; color:var(--muted);
+          font-weight:600; padding:13px 24px; border-radius:14px;
+          border:1px dashed var(--border); background:var(--card); cursor:default; }
   .meta { margin:12px 0 0; color:var(--muted); font-size:14px; }
   ul { padding-left:20px; margin:28px 0 0; }
   li { margin:6px 0; }
@@ -33,7 +37,10 @@
   <div class="card">
     <h1>Note Today</h1>
     <p class="lead">Нотатки й календар для Windows. Працює без інтернету, а з Google-акаунтом — синхронізує нотатки через Google Drive і показує події Google Calendar.</p>
-    <a class="download" id="download" href="update.json">⬇ Завантажити для Windows</a>
+    <div class="actions">
+      <a class="download" id="download" href="update.json">⬇ Завантажити для Windows</a>
+      <span class="soon" title="Версія для Android готується">📱 Скоро на мобільних пристроях</span>
+    </div>
     <p class="meta" id="version">Windows 10 і 11, 64-біт</p>
     <ul>
       <li>Нотатки з групами, пошуком, закріпленням і кошиком.</li>
